@@ -1,0 +1,29 @@
+{
+  "name": "apiChat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kauangouveia/chatBauen.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kauangouveia/chatBauen/issues"
+  },
+  "homepage": "https://github.com/kauangouveia/chatBauen#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "knex": "^0.95.11",
+    "nodemon": "^2.0.13",
+    "socket-io": "^1.0.0",
+    "socket.io": "^4.2.0"
+  }
+}

@@ -15,9 +15,19 @@ const io = new Server(server, {
 
 io.on("connection", (socket) => {
   console.log(`User connected at : ${socket.id}`);
-   socket.on("disconnect", () => {
-     console.log("user disconnect");
-   })
+
+  socket.on("join_room", (data, name) => {
+    socket.join(data, name);
+    console.log(
+      `User with id : ${socket.id}, joined room : ${data} he name is : ${name}`
+    );
+  });
+  socket.on("send_message", (data) => {
+    console.log(data)
+  });
+  socket.on("disconnect", () => {
+    console.log("user disconnect");
+  });
 });
 
 server.listen(3001, () => {
